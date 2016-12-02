@@ -40,6 +40,7 @@ RUN set -x \
     && cd ${FISHEYE_INSTALL}/lib \
     && curl -SLO "https://gist.github.com/TommyLau/8a5ce4629d027f7884e6/raw/37ac5fb1f1d1f780d7c28c7ff24aca77515ee9af/atlassian-extras-2.5.jar" \
     && curl -SLO "https://raw.githubusercontent.com/xinmeng1/ShareFiles/master/mysql-connector-java-5.1.39-bin.jar" \
+    && curl -SLO "https://raw.githubusercontent.com/xinmeng1/ShareFiles/master/postgresql-9.4.1212.jar" \
     && cd ../plugins/ \
     && curl -SLO "https://gist.github.com/TommyLau/8a5ce4629d027f7884e6/raw/37ac5fb1f1d1f780d7c28c7ff24aca77515ee9af/atlassian-universal-plugin-manager-plugin-2.20.5.jar" \
     && zip -u9 bundled-plugins.zip atlassian-universal-plugin-manager-plugin-2.20.5.jar \
